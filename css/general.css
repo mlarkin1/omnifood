@@ -59,6 +59,11 @@ Default 9px
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.508);
+}
+
 html {
   font-size: 62.5%;
   /* font-size is 10px */
@@ -163,6 +168,21 @@ body {
   font-size: 1.8rem;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem !important;
+  font-size: 1.8rem;
+
+}
+
+.btn--form:hover {
+  background-image: linear-gradient(to right, rgba(236, 115, 10, 0.728), #fff,rgba(236, 115, 10, 0.629) );
+  background-color:  #fff;
+  color: #555;
+}
+
 .btn--full:link, .btn--full:visited {
   background-color:#e67e22;
   color: #fff;
@@ -188,7 +208,7 @@ body {
   
 }
 
-.btn:link, b.btn:visited {
+.btn:link, b.btn:visited, .btn {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -196,6 +216,9 @@ body {
   border-radius: .9rem;
   font-weight: 600;
   transition: all .3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .link:link, .link:visited {
