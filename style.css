@@ -80,6 +80,7 @@ body {
 
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -124,6 +125,24 @@ body {
 
 .main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
   background-color: #e67e22;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+
+.icon-mobile-nav[name="close"] {
+display: none;
 }
 
 /*****************************************/
@@ -290,8 +309,7 @@ body {
 }
 
 .meal-content {
-  padding: 4.8rem;
-  padding-top: 3.2rem;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal {
@@ -359,12 +377,8 @@ body {
 
 .meal-img {
   width: 100%;
-  transition: all 0.2s;
 }
 
-.meal-img:hover {
-  transform: scale(1.1);
-}
 
 .meal-icon {
   height: 2.4rem;
@@ -424,7 +438,11 @@ color: #6f6f6f;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem; 
-  margin-top: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
 }
 
 .gallery-item img {

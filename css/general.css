@@ -67,6 +67,7 @@ Default 9px
 html {
   font-size: 62.5%;
   /* font-size is 10px */
+  overflow-x: hidden;
 }
 
 body {
@@ -74,6 +75,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /*****************************************/
@@ -169,6 +171,7 @@ body {
   align-items: center;
   gap: 1.6rem;
   font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 .btn--form {
@@ -211,7 +214,7 @@ body {
   
 }
 
-.btn:link, b.btn:visited, .btn {
+.btn:link, .btn:visited, .btn {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
